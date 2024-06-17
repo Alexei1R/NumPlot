@@ -6,6 +6,8 @@
 #define NPLOT_SCENE_H
 #include "NPlot/nplotpch.h"
 
+#include "NPlot/Renderer/Window.h"
+
 namespace np
 {
 class Scene
@@ -14,10 +16,15 @@ class Scene
     Scene(std::string name);
     ~Scene();
 
+    void Update();
 
   private:
     void Init();
+
+  private:
+    Window *m_Window;
 };
+
 } // namespace np
 
 #endif // NPLOT_SCENE_H

@@ -3,17 +3,26 @@
 //
 
 #include "Scene.h"
+#include "NPlot/Renderer/Window.h"
+#include <memory>
 
-np::Scene::Scene(std::string name) {
+namespace np
+{
+Scene::Scene(std::string name)
+{
     Log::Init();
     LOG_INFO("Creating Scene " + name + "\n")
-
+    Init();
 }
 
-np::Scene::~Scene() {
+Scene::~Scene() {}
 
+void Scene::Init() { m_Window = Window::GetInstance(); }
+
+void Scene::Update()
+{
+    m_Window->ClearDisplay(glm::vec3(0.5, 0.5, 0.5));
+
+    m_Window->OnUpdate();
 }
-
-void np::Scene::Init() {
-
-}
+} // namespace np
