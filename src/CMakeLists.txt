@@ -8,7 +8,8 @@ set(LIB_SRC
         NPlot/Renderer/Window.h
         NPlot/Renderer/Window.cpp
 
-
+        NPlot/Events/Event.h
+        NPlot/Events/ImplEvent.h
 )
 
 

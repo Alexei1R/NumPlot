@@ -17,11 +17,15 @@ class Scene
     ~Scene();
 
     void Update();
+    bool IsRunning() { return m_Running; }
 
   private:
     void Init();
 
+    void HandleEvent(const Event &event);
+
   private:
+    bool m_Running = true;
     Window *m_Window;
 };
 

@@ -55,4 +55,7 @@
 
 #include "NPlot/Utils/Logger.h"
 
+#include <NPlot/Events/Event.h>
+
+#include <NPlot/Events/ImplEvent.h>
 #endif

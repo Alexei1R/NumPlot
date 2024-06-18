@@ -2,6 +2,8 @@
 // Created by toor on 2024-06-17 .
 //
 
+#include "NPlot/Events/Event.h"
+#include "NPlot/Events/ImplEvent.h"
 #include "NPlot/Utils/Logger.h"
 #include <NPlot/Renderer/Window.h>
 
@@ -67,6 +69,7 @@ Window::Window(const WindowSpecs &specs) : m_WindowSpecs(specs)
     glfwWindowHint(GLFW_DEPTH_BITS, 24);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    SetCallBackEvents();
 }
 
 Window::~Window()
@@ -99,6 +102,116 @@ void Window::SetVSync(bool enabled)
 {
     m_Data.VSync = enabled;
     glfwSwapInterval(enabled ? 1 : 0);
+}
+
+void Window::SetCallBackEvents()
+{
+    // Set GLFW callbacks
+    glfwSetWindowSizeCallback(
+        m_Window,
+        [](GLFWwindow *window, int width, int height)
+        {
+            glViewport(0, 0, width, height);
+
+            WindowData &data = *(WindowData *)glfwGetWindowUserPointer(window);
+            data.Width = width;
+            data.Height = height;
+
+            WindowEvent event(width, height, Action::Resize);
+            data.m_EventCallback(event);
+        });
+
+    glfwSetWindowCloseCallback(
+        m_Window,
+        [](GLFWwindow *window)
+        {
+            WindowData &data = *(WindowData *)glfwGetWindowUserPointer(window);
+            WindowEvent event(0, 0, Action::Close);
+            data.m_EventCallback(event);
+        });
+
+    glfwSetKeyCallback(
+        m_Window,
+        [](GLFWwindow *window, int key, int scancode, int action, int mods)
+        {
+            WindowData &data = *(WindowData *)glfwGetWindowUserPointer(window);
+
+            switch (action)
+            {
+            case GLFW_PRESS:
+            {
+                KeyEvent event(key, Action::KeyPress);
+                data.m_EventCallback(event);
+
+                break;
+            }
+            case GLFW_RELEASE:
+            {
+                KeyEvent event(key, Action::KeyRelease);
+                data.m_EventCallback(event);
+                break;
+            }
+            case GLFW_REPEAT:
+            {
+                KeyEvent event(key, Action::KeyRepeat);
+                data.m_EventCallback(event);
+                break;
+            }
+            }
+        });
+
+    glfwSetCharCallback(m_Window,
+                        [](GLFWwindow *window, unsigned int keycode)
+                        {
+                            WindowData &data =
+                                *(WindowData *)glfwGetWindowUserPointer(window);
+
+                            KeyEvent event(keycode, Action::RegisterKeyChar);
+                            data.m_EventCallback(event);
+                        });
+
+    glfwSetMouseButtonCallback(
+        m_Window,
+        [](GLFWwindow *window, int button, int action, int mods)
+        {
+            WindowData &data = *(WindowData *)glfwGetWindowUserPointer(window);
+
+            switch (action)
+            {
+            case GLFW_PRESS:
+            {
+                KeyEvent event(button, Action::KeyPress);
+                data.m_EventCallback(event);
+                break;
+            }
+            case GLFW_RELEASE:
+            {
+                KeyEvent event(button, Action::KeyRelease);
+                data.m_EventCallback(event);
+                break;
+            }
+            }
+        });
+
+    glfwSetScrollCallback(
+        m_Window,
+        [](GLFWwindow *window, double xOffset, double yOffset)
+        {
+            WindowData &data = *(WindowData *)glfwGetWindowUserPointer(window);
+
+            MouseEvent event(xOffset, yOffset, Action::Scroll);
+            data.m_EventCallback(event);
+        });
+
+    glfwSetCursorPosCallback(
+        m_Window,
+        [](GLFWwindow *window, double xPos, double yPos)
+        {
+            WindowData &data = *(WindowData *)glfwGetWindowUserPointer(window);
+
+            MouseEvent event(xPos, yPos, Action::Move);
+            data.m_EventCallback(event);
+        });
 }
 
 } // namespace np

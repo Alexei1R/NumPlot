@@ -15,8 +15,8 @@ struct WindowSpecs
     std::string Title;
     unsigned int Width, Height;
 
-    WindowSpecs(const std::string title = "NPlot", int width = 1080,
-                int height = 720, bool VSync = true)
+    WindowSpecs(const std::string title = "NPlot", int width = 720,
+                int height = 480, bool VSync = true)
         : Title(title), Width(width), Height(height)
     {
     }
@@ -26,9 +26,11 @@ class Window
 {
   private:
     Window(const WindowSpecs &specs);
-    ~Window();
+    using EventCallbackFn = std::function<void(Event &)>;
 
   public:
+    ~Window();
+
     Window(const Window &) = delete;
     Window &operator=(const Window &) = delete;
 
@@ -47,6 +49,11 @@ class Window
 
     unsigned int GetHeight() const { return m_Data.Height; }
 
+    void SetEventCallback(const EventCallbackFn &callback)
+    {
+        m_Data.m_EventCallback = callback;
+    }
+
     bool IsVSync() const { return m_Data.VSync; }
 
     void *GetNativeWindow() const { return m_Window; };
@@ -60,8 +67,10 @@ class Window
         unsigned int Width, Height;
         bool Fullscreen = false;
         bool VSync;
-        // EventCallbackFn m_EventCallback;
+        EventCallbackFn m_EventCallback;
     };
+
+    void SetCallBackEvents();
 
   private:
     static Window *s_WindowInstance;
