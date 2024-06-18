@@ -4,6 +4,7 @@
 
 #ifndef NPLOT_SCENE_H
 #define NPLOT_SCENE_H
+#include "NPlot/Renderer/Shader.h"
 #include "NPlot/nplotpch.h"
 
 #include "NPlot/Renderer/Window.h"
@@ -27,6 +28,8 @@ class Scene
   private:
     bool m_Running = true;
     Window *m_Window;
+
+    // Nu permanent , numai perntru a crea meai usor
 };
 
 } // namespace np

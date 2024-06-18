@@ -58,4 +58,7 @@
 #include <NPlot/Events/Event.h>
 
 #include <NPlot/Events/ImplEvent.h>
+
+#include "NPlot/Renderer/Shader.h"
+
 #endif

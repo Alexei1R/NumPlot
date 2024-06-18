@@ -8,6 +8,13 @@ set(LIB_SRC
         NPlot/Renderer/Window.h
         NPlot/Renderer/Window.cpp
 
+        NPlot/Renderer/Shader.h
+        NPlot/Renderer/Shader.cpp
+
+        NPlot/Renderer/Camera.h
+        NPlot/Renderer/Camera.cpp
+
+
         NPlot/Events/Event.h
         NPlot/Events/ImplEvent.h
 )

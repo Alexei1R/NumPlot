@@ -28,11 +28,18 @@ void Scene::Init()
     m_Window = Window::GetInstance();
     m_Window->SetEventCallback(
         std::bind(&Scene::HandleEvent, this, std::placeholders::_1));
+
+    // Shader setup
+    // new Shader("/home/toor/Code/NumPlot/src/NPlot/Assets/default.vs",
+    //            "/home/toor/Code/NumPlot/src/NPlot/Assets/default.fs");
 }
 
 void Scene::Update()
 {
     m_Window->ClearDisplay(glm::vec3(0.5, 0.5, 0.5));
+
+    // MY CODE
+    // Draw the triangle
 
     m_Window->OnUpdate();
 }
