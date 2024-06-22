@@ -1,0 +1,266 @@
+[
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -I/home/toor/Code/NumPlot/libs/myglad/include -O3 -DNDEBUG -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o libs/myglad/CMakeFiles/glad.dir/src/glad.c.o -c /home/toor/Code/NumPlot/libs/myglad/src/glad.c",
+  "file": "/home/toor/Code/NumPlot/libs/myglad/src/glad.c",
+  "output": "libs/myglad/CMakeFiles/glad.dir/src/glad.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/context.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/context.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/context.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/init.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/init.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/init.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/input.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/input.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/input.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/monitor.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/monitor.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/monitor.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/platform.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/platform.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/platform.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/platform.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/vulkan.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/vulkan.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/window.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/window.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/window.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/window.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/egl_context.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/egl_context.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/osmesa_context.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/osmesa_context.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/null_init.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/null_init.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/null_init.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/null_init.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/null_monitor.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/null_monitor.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/null_window.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/null_window.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/null_window.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/null_window.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/null_joystick.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/null_joystick.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/posix_module.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/posix_module.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/posix_time.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/posix_time.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/posix_thread.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/posix_thread.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/x11_init.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/x11_init.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/x11_monitor.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/x11_monitor.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/x11_window.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/x11_window.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/xkb_unicode.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/xkb_unicode.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/glx_context.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/glx_context.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/wl_init.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/wl_init.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/wl_init.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/wl_init.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/wl_monitor.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/wl_monitor.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/wl_monitor.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/wl_monitor.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/wl_window.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/wl_window.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/linux_joystick.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/linux_joystick.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glfw/src -I/home/toor/Code/NumPlot/cmake-build-release/libs/glfw/src -O3 -DNDEBUG -std=c99 -fPIC -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -Wall -o libs/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o -c /home/toor/Code/NumPlot/libs/glfw/src/posix_poll.c",
+  "file": "/home/toor/Code/NumPlot/libs/glfw/src/posix_poll.c",
+  "output": "libs/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -I/home/toor/Code/NumPlot/libs/glm -O3 -DNDEBUG -std=c++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o libs/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o -c /home/toor/Code/NumPlot/libs/glm/glm/detail/glm.cpp",
+  "file": "/home/toor/Code/NumPlot/libs/glm/glm/detail/glm.cpp",
+  "output": "libs/glm/glm/CMakeFiles/glm.dir/detail/glm.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=c++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o libs/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o -c /home/toor/Code/NumPlot/libs/spdlog/src/spdlog.cpp",
+  "file": "/home/toor/Code/NumPlot/libs/spdlog/src/spdlog.cpp",
+  "output": "libs/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=c++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o libs/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o -c /home/toor/Code/NumPlot/libs/spdlog/src/stdout_sinks.cpp",
+  "file": "/home/toor/Code/NumPlot/libs/spdlog/src/stdout_sinks.cpp",
+  "output": "libs/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=c++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o libs/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o -c /home/toor/Code/NumPlot/libs/spdlog/src/color_sinks.cpp",
+  "file": "/home/toor/Code/NumPlot/libs/spdlog/src/color_sinks.cpp",
+  "output": "libs/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=c++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o libs/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o -c /home/toor/Code/NumPlot/libs/spdlog/src/file_sinks.cpp",
+  "file": "/home/toor/Code/NumPlot/libs/spdlog/src/file_sinks.cpp",
+  "output": "libs/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=c++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o libs/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o -c /home/toor/Code/NumPlot/libs/spdlog/src/async.cpp",
+  "file": "/home/toor/Code/NumPlot/libs/spdlog/src/async.cpp",
+  "output": "libs/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=c++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o libs/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o -c /home/toor/Code/NumPlot/libs/spdlog/src/cfg.cpp",
+  "file": "/home/toor/Code/NumPlot/libs/spdlog/src/cfg.cpp",
+  "output": "libs/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=c++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o libs/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o -c /home/toor/Code/NumPlot/libs/spdlog/src/bundled_fmtlib_format.cpp",
+  "file": "/home/toor/Code/NumPlot/libs/spdlog/src/bundled_fmtlib_format.cpp",
+  "output": "libs/spdlog/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/src -I/home/toor/Code/NumPlot/libs/myglad/include -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glm -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o src/CMakeFiles/NPlot.dir/NPlot/Renderer/Camera.cpp.o -c /home/toor/Code/NumPlot/src/NPlot/Renderer/Camera.cpp",
+  "file": "/home/toor/Code/NumPlot/src/NPlot/Renderer/Camera.cpp",
+  "output": "src/CMakeFiles/NPlot.dir/NPlot/Renderer/Camera.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/src -I/home/toor/Code/NumPlot/libs/myglad/include -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glm -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o src/CMakeFiles/NPlot.dir/NPlot/Renderer/IndexBuffer.cpp.o -c /home/toor/Code/NumPlot/src/NPlot/Renderer/IndexBuffer.cpp",
+  "file": "/home/toor/Code/NumPlot/src/NPlot/Renderer/IndexBuffer.cpp",
+  "output": "src/CMakeFiles/NPlot.dir/NPlot/Renderer/IndexBuffer.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/src -I/home/toor/Code/NumPlot/libs/myglad/include -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glm -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o src/CMakeFiles/NPlot.dir/NPlot/Renderer/Shader.cpp.o -c /home/toor/Code/NumPlot/src/NPlot/Renderer/Shader.cpp",
+  "file": "/home/toor/Code/NumPlot/src/NPlot/Renderer/Shader.cpp",
+  "output": "src/CMakeFiles/NPlot.dir/NPlot/Renderer/Shader.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/src -I/home/toor/Code/NumPlot/libs/myglad/include -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glm -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o src/CMakeFiles/NPlot.dir/NPlot/Renderer/VertexArrayBuffer.cpp.o -c /home/toor/Code/NumPlot/src/NPlot/Renderer/VertexArrayBuffer.cpp",
+  "file": "/home/toor/Code/NumPlot/src/NPlot/Renderer/VertexArrayBuffer.cpp",
+  "output": "src/CMakeFiles/NPlot.dir/NPlot/Renderer/VertexArrayBuffer.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/src -I/home/toor/Code/NumPlot/libs/myglad/include -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glm -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o src/CMakeFiles/NPlot.dir/NPlot/Renderer/VertexBuffer.cpp.o -c /home/toor/Code/NumPlot/src/NPlot/Renderer/VertexBuffer.cpp",
+  "file": "/home/toor/Code/NumPlot/src/NPlot/Renderer/VertexBuffer.cpp",
+  "output": "src/CMakeFiles/NPlot.dir/NPlot/Renderer/VertexBuffer.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/src -I/home/toor/Code/NumPlot/libs/myglad/include -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glm -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o src/CMakeFiles/NPlot.dir/NPlot/Renderer/Window.cpp.o -c /home/toor/Code/NumPlot/src/NPlot/Renderer/Window.cpp",
+  "file": "/home/toor/Code/NumPlot/src/NPlot/Renderer/Window.cpp",
+  "output": "src/CMakeFiles/NPlot.dir/NPlot/Renderer/Window.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/src -I/home/toor/Code/NumPlot/libs/myglad/include -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glm -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o src/CMakeFiles/NPlot.dir/NPlot/Scene/Scene.cpp.o -c /home/toor/Code/NumPlot/src/NPlot/Scene/Scene.cpp",
+  "file": "/home/toor/Code/NumPlot/src/NPlot/Scene/Scene.cpp",
+  "output": "src/CMakeFiles/NPlot.dir/NPlot/Scene/Scene.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/src -I/home/toor/Code/NumPlot/libs/myglad/include -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glm -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o src/CMakeFiles/NPlot.dir/NPlot/Utils/Logger.cpp.o -c /home/toor/Code/NumPlot/src/NPlot/Utils/Logger.cpp",
+  "file": "/home/toor/Code/NumPlot/src/NPlot/Utils/Logger.cpp",
+  "output": "src/CMakeFiles/NPlot.dir/NPlot/Utils/Logger.cpp.o"
+},
+{
+  "directory": "/home/toor/Code/NumPlot/cmake-build-release",
+  "command": "/usr/bin/c++ -DSPDLOG_COMPILED_LIB -I/home/toor/Code/NumPlot/sandbox -I/home/toor/Code/NumPlot/src -I/home/toor/Code/NumPlot/libs/myglad/include -I/home/toor/Code/NumPlot/libs/glfw/include -I/home/toor/Code/NumPlot/libs/glm -I/home/toor/Code/NumPlot/libs/spdlog/include -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always -Wno-array-bounds -Wno-error=stringop-overflow -o sandbox/CMakeFiles/executable.dir/main.cpp.o -c /home/toor/Code/NumPlot/sandbox/main.cpp",
+  "file": "/home/toor/Code/NumPlot/sandbox/main.cpp",
+  "output": "sandbox/CMakeFiles/executable.dir/main.cpp.o"
+}
+]

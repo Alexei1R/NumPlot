@@ -61,8 +61,8 @@ unsigned int Shader::CompileShader(std::string &source, unsigned int type)
     glGetShaderiv(id, GL_COMPILE_STATUS, &success);
     if (!success)
     {
-        LOG_CRITICAL("ERROR::SHADER::" + std::to_string(id) +
-                     " ::COMPILATION_FAILED\n" + infoLog + "\n");
+        std::cout << "ERROR::SHADER::" + std::to_string(id) +
+                         " ::COMPILATION_FAILED\n" + infoLog + "\n";
     }
 
     return id;

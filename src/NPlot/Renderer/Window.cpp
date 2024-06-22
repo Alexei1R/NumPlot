@@ -2,45 +2,32 @@
 // Created by toor on 2024-06-17 .
 //
 
+#include "NPlot/Renderer/Window.h"
 #include "NPlot/Events/Event.h"
 #include "NPlot/Events/ImplEvent.h"
 #include "NPlot/Utils/Logger.h"
-#include <NPlot/Renderer/Window.h>
 
 namespace np
 {
-
 static void GLFWErrorCallback(int error, const char *description)
 {
     LOG_ERROR("GLFW Error ({0}): {1}", error, description);
 }
 
-Window *Window::s_WindowInstance = nullptr;
-
-Window *Window::GetInstance(const WindowSpecs &spec)
-{
-
-    if (!s_WindowInstance)
-    {
-        s_WindowInstance = new Window(spec);
-    }
-    return s_WindowInstance;
-}
-
 Window::Window(const WindowSpecs &specs) : m_WindowSpecs(specs)
 {
-    LOG_INFO("Creating Instance")
+    LOG_INFO("Creating Instance");
 
     m_Data.Title = specs.Title;
     m_Data.Width = specs.Width;
     m_Data.Height = specs.Height;
 
     LOG_INFO("Creating Window ::  {0}, {1}:{2}", m_Data.Title, m_Data.Width,
-             m_Data.Height)
+             m_Data.Height);
     int success = glfwInit();
     if (success != 1)
     {
-        LOG_CRITICAL("!Succes glfw")
+        LOG_CRITICAL("!Succes glfw");
     }
     glfwSetErrorCallback(GLFWErrorCallback);
     m_Window = glfwCreateWindow(
@@ -50,10 +37,10 @@ Window::Window(const WindowSpecs &specs) : m_WindowSpecs(specs)
     int version = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
     if (!version)
     {
-        LOG_CRITICAL("Failed to initialize OpenGL context")
+        LOG_CRITICAL("Failed to initialize OpenGL context");
         return;
     }
-    LOG_INFO("WINDOW Init with succes")
+    LOG_INFO("WINDOW Init with success");
     LOG_INFO("OpenGL Info:");
     LOG_INFO("  Vendor: {}",
              reinterpret_cast<const char *>(glGetString(GL_VENDOR)));
@@ -63,18 +50,11 @@ Window::Window(const WindowSpecs &specs) : m_WindowSpecs(specs)
              reinterpret_cast<const char *>(glGetString(GL_VERSION)));
 
     glfwSetWindowUserPointer(m_Window, &m_Data);
-    // Enables the Depth Buffer
-    glEnable(GL_DEPTH_TEST);
-    glDepthFunc(GL_LESS);
-    glfwWindowHint(GLFW_DEPTH_BITS, 24);
-    glEnable(GL_BLEND);
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     SetCallBackEvents();
 }
 
 Window::~Window()
 {
-
     glfwDestroyWindow(m_Window);
     glfwTerminate();
 }

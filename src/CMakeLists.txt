@@ -1,26 +1,25 @@
 
-set(LIB_SRC
-        NPlot/Scene/Scene.cpp
-        NPlot/Scene/Scene.h
-        NPlot/Utils/Logger.cpp
-        NPlot/Utils/Logger.h
-        NPlot/Utils/macros.h
-        NPlot/Renderer/Window.h
-        NPlot/Renderer/Window.cpp
 
-        NPlot/Renderer/Shader.h
-        NPlot/Renderer/Shader.cpp
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
-        NPlot/Renderer/Camera.h
-        NPlot/Renderer/Camera.cpp
-
-
-        NPlot/Events/Event.h
-        NPlot/Events/ImplEvent.h
+file(GLOB_RECURSE LIB_SRC
+    "${CMAKE_CURRENT_SOURCE_DIR}/NPlot/Scene/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/NPlot/Utils/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/NPlot/Renderer/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/NPlot/Events/*.cpp"
 )
 
+file(GLOB_RECURSE LIB_HEADERS
+    "${CMAKE_CURRENT_SOURCE_DIR}/NPlot/Scene/*.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/NPlot/Utils/*.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/NPlot/Renderer/*.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/NPlot/Events/*.h"
+)
 
-add_library(NPlot ${LIB_SRC})
+add_library(NPlot ${LIB_SRC} ${LIB_HEADERS})
+
+
+
 
 target_link_libraries(NPlot
         glad
@@ -29,7 +28,5 @@ target_link_libraries(NPlot
         spdlog
 )
 target_include_directories(NPlot PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/)
-
-
 
 
