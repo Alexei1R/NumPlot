@@ -63,7 +63,6 @@ void Scene::Init()
         "/home/toor/Code/NumPlot/src/NPlot/Assets/default.fs");
     m_Shader->Bind();
 
-    // Unbind VAO
 } // namespace np
 void Scene::Update()
 {
