@@ -6,6 +6,7 @@
 #include "NPlot/Events/ImplEvent.h"
 #include "NPlot/Renderer/Buffer.h"
 #include "NPlot/Renderer/IndexBuffer.h"
+#include "NPlot/Renderer/VertexArrayBuffer.h"
 #include "NPlot/Renderer/VertexBuffer.h"
 #include "NPlot/Renderer/Window.h"
 #include "NPlot/Utils/Logger.h"
@@ -14,36 +15,6 @@
 
 namespace np
 {
-static GLenum ShaderDataTypeToOpenGLBaseType(ShaderDataType type)
-{
-    switch (type)
-    {
-    case ShaderDataType::Float:
-        return GL_FLOAT;
-    case ShaderDataType::Float2:
-        return GL_FLOAT;
-    case ShaderDataType::Float3:
-        return GL_FLOAT;
-    case ShaderDataType::Float4:
-        return GL_FLOAT;
-    case ShaderDataType::Mat3:
-        return GL_FLOAT;
-    case ShaderDataType::Mat4:
-        return GL_FLOAT;
-    case ShaderDataType::Int:
-        return GL_INT;
-    case ShaderDataType::Int2:
-        return GL_INT;
-    case ShaderDataType::Int3:
-        return GL_INT;
-    case ShaderDataType::Int4:
-        return GL_INT;
-    case ShaderDataType::Bool:
-        return GL_BOOL;
-    }
-
-    return 0;
-}
 
 Scene::Scene(std::string name)
 {
@@ -72,41 +43,27 @@ void Scene::Init()
         1, 2, 3  // second triangle
     }; // Generating VAO and binding it
 
-    glGenVertexArrays(1, &m_VAO);
-    glBindVertexArray(m_VAO);
+    m_VertexArray = std::make_shared<VertexArrayBuffer>();
 
     m_VertexBuffer = std::make_shared<VertexBuffer>(vertices, sizeof(vertices));
     m_VertexBuffer->Bind();
-
-    m_IndexBuffer = std::make_shared<IndexBuffer>(
-        indices, sizeof(indices) / sizeof(unsigned int));
-    m_IndexBuffer->Bind();
 
     BufferLayout layout = {{ShaderDataType::Float3, "aPos"},
                            {ShaderDataType::Float4, "aColor"}};
 
     // Vertex Attributes Layout
     m_VertexBuffer->SetLayout(layout);
-
-    int index = 0;
-    for (auto const &element : m_VertexBuffer->GetLayout())
-    {
-
-        glEnableVertexAttribArray(index);
-        glVertexAttribPointer(index, element.GetComponentCount(),
-                              ShaderDataTypeToOpenGLBaseType(element.Type),
-                              element.Normalized ? GL_TRUE : GL_FALSE,
-                              layout.GetStride(), (const void *)element.Offset);
-        index++;
-    }
-
+    m_VertexArray->AddVertexBuffer(m_VertexBuffer);
+    m_IndexBuffer = std::make_shared<IndexBuffer>(
+        indices, sizeof(indices) / sizeof(unsigned int));
+    m_IndexBuffer->Bind();
+    m_VertexArray->SetIndexBuffer(m_IndexBuffer);
     m_Shader = std::make_shared<Shader>(
         "/home/toor/Code/NumPlot/src/NPlot/Assets/default.vs",
         "/home/toor/Code/NumPlot/src/NPlot/Assets/default.fs");
     m_Shader->Bind();
 
     // Unbind VAO
-    glBindVertexArray(0);
 } // namespace np
 void Scene::Update()
 {
@@ -117,8 +74,7 @@ void Scene::Update()
     m_Shader->Bind();
 
     // Bind Vertex Array Object
-    glBindVertexArray(m_VAO);
-
+    m_VertexArray->Bind();
     // Draw two squares
     glDrawElements(GL_TRIANGLES, 12, GL_UNSIGNED_INT, 0);
 

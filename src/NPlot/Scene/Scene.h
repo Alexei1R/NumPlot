@@ -34,6 +34,7 @@ class Scene
 
     // Nu permanent , numai perntru a crea meai usor
     std::shared_ptr<Shader> m_Shader;
+    std::shared_ptr<VertexArrayBuffer> m_VertexArray;
     std::shared_ptr<VertexBuffer> m_VertexBuffer;
     std::shared_ptr<IndexBuffer> m_IndexBuffer;
     unsigned int m_VAO;

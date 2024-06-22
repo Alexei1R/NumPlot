@@ -37,13 +37,12 @@ static GLenum ShaderDataTypeToOpenGLBaseType(ShaderDataType type)
     return 0;
 }
 
-VertexArrayBuffer::VertexArrayBuffer()
-{
-    glGenVertexArrays(1, &m_RendererID);
-    glBindVertexArray(m_RendererID);
-}
+VertexArrayBuffer::VertexArrayBuffer() { glGenVertexArrays(1, &m_RendererID); }
 
-VertexArrayBuffer::~VertexArrayBuffer() {}
+VertexArrayBuffer::~VertexArrayBuffer()
+{
+    glDeleteVertexArrays(1, &m_RendererID);
+}
 
 void VertexArrayBuffer::Bind() const { glBindVertexArray(m_RendererID); }
 
@@ -55,12 +54,8 @@ void VertexArrayBuffer::AddVertexBuffer(Ref<VertexBuffer> &vertexBuffer)
     vertexBuffer->Bind();
 
     int index = 0;
-    auto const &layout = vertexBuffer->GetLayout();
-    if (layout.GetElements().size() <= 0)
-    {
-        LOG_CRITICAL("Layout is not set beffore VertexArray ")
-    }
-    for (auto const &element : layout)
+    const auto &layout = vertexBuffer->GetLayout();
+    for (const auto &element : layout)
     {
 
         glEnableVertexAttribArray(index);
@@ -75,9 +70,10 @@ void VertexArrayBuffer::AddVertexBuffer(Ref<VertexBuffer> &vertexBuffer)
 }
 void VertexArrayBuffer::SetIndexBuffer(Ref<IndexBuffer> &indexBuffer)
 {
-    glGenVertexArrays(1, &m_RendererID);
-    m_IndexBuffer = indexBuffer;
+
+    glBindVertexArray(m_RendererID);
     indexBuffer->Bind();
+    m_IndexBuffer = indexBuffer;
 }
 
 } // namespace np
